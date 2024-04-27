@@ -38,7 +38,7 @@ class Form:
        self.wait.until(ec.presence_of_element_located((By.ID, "text-input__4"))).send_keys("09-1992")
        self.driver.execute_script('window.scrollBy(800, 0)')
        #variable declaration to search results
-       results= self.driver.find_element(By.CLASS_NAME,'ipc-btn__text')+++++
+       results= self.driver.find_element(By.CLASS_NAME,'ipc-btn__text')
        self.driver.execute_script("arguments[0].click();", results)
        self.quit()
 
